@@ -1,10 +1,10 @@
 # Contacts List Application
 
-## Description
+## DESCRIPTION
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-## Functionality
+## FUNCTIONALITY
 
 This application allows you to:
 
@@ -32,5 +32,18 @@ This application allows you to:
 
 1. Npm server.
 2. Browser with JavaScript enabled.
+
+### VERSION
+
+1.0
+
+### LINK
+
+[See 'Contacts List' application online »](https://hajczek.github.io/Contacts-List/)
+
+### LICENSE
+
+The MIT License - See [license.md](https://github.com/hajczek/Neighborhood---Warsaw-Cultural-Map/blob/master/license/License.md)
+
 
 
