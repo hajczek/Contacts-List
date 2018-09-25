@@ -1,0 +1,299 @@
+$bg-color: #f9fbfa;
+$white-color: #fff;
+$thead-bg-color: #f4f5f7;
+$button-color: #f48cda;
+$font-color: #646c73;
+$email-color: #3b99b1;
+$delete-color: #d4d8da;
+$placeholder-color: #d3d5d7;
+$reset-field-color: #f56565;
+$tr-color: #fbfcfc;
+$hover-color: #fce1f6;
+$info-color: #2a2c2b;
+$error-color: #e12636;
+$correct-color: #0bab6b;
+
+$font: 'Roboto', sans-serif;
+
+body {
+  background-color: $bg-color;
+  font-family: $font;
+  font-size: 16px;
+}
+
+.Container {
+    display: block;
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 38px;
+
+    h1 {
+        color: $font-color;
+    }
+}
+section {
+    display:  block;
+    float: left;
+    width: 960px;
+    height: auto;
+    box-shadow: 0 2px 4px 0 #ccc;
+    background-color: $white-color;
+
+    #panel {
+        width: 940px;
+        display: block;
+        float: left;
+        background-color: $white-color;
+        padding: 19px 0 19px 20px;
+    
+        #add-user,
+        #submit {
+            background-color: $button-color;
+            width: 149px;
+            height: 41px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            color: $white-color;
+            font-weight:  bold;
+           // margin-left: 20px;
+    
+            span {
+                font-size: 17px;
+                padding: 0 5px;
+                background-color: $white-color;
+                color: $button-color;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+        }
+
+        #add-user:hover,
+        #submit:hover {
+            background-color: $white-color;
+            color: $button-color;
+            cursor: pointer;
+            border: 2px solid $button-color;
+
+            span {
+                background-color: $button-color;
+                color: $white-color;
+            }
+        }
+
+        #add-user:focus,
+        #submit:focus {
+            outline: none;
+        }
+
+        #name,
+        #email {
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            padding: 9px 0 10px 5px;
+            font-size: 1.3em;
+            margin-right: 20px;
+        }
+
+        ::placeholder {
+            color: $placeholder-color;
+        }
+        
+        :-ms-input-placeholder {
+            color: $placeholder-color;
+        }
+        
+        ::-ms-input-placeholder {
+            color: $placeholder-color;
+        }
+
+        #reset-field {
+            color: $reset-field-color;
+            text-decoration: underline;
+            font-weight: bold;
+            font-weight: 0.9em;
+            margin-left: 20px;
+            display: none;
+        }
+
+        #reset-field:hover {
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        #info {
+            color: $info-color;
+            font-weight: bold;
+            padding-left: 20px;
+
+        }
+
+        .error::before {
+            content: "! ";
+            color: $error-color;
+            padding: 2px 3px 2px 7px;
+            border: 2px solid $error-color;;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .error:before {
+            content: "! ";
+            color: $error-color;
+            padding: 2px 3px 2px 7px;
+            border: 2px solid $error-color;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .correct::before {
+            content: "✔ ";
+            color: $correct-color;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .correct:before {
+            content: "✔ ";
+            color: $correct-color;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+    }
+    
+    table {
+        float: left;
+        width: 100%;
+        border: 0;
+        color: $font-color;
+        margin-bottom: 20px;
+        border-collapse: collapse;
+        border-spacing: 0;
+    
+        thead {
+    
+            tr {
+                height: 30px;
+                border: 0;
+            }
+    
+            background-color: $thead-bg-color;
+            text-align: left;
+    
+            #lp-title, {
+                width: 15%;
+                text-align: left;
+                padding-left: 20px;
+            }
+            
+            #name-title{
+                width: 30%;
+                opacity: 1;
+            }
+    
+            #email-title {
+                width: 45%;
+                text-align: left;
+                opacity: 1;
+            }
+
+            #name-title:hover,
+            #email-title:hover {
+                cursor: pointer;
+                opacity: 0.7;
+            }
+
+            #delete-title {
+                width: 45%;
+                text-align: center;
+            }
+        }
+    
+        tbody {
+    
+            tr {
+                height: 40px;
+                border: none;
+
+                td {
+                    border: none;
+                }
+    
+                #lp-td {
+                    text-align: left;
+                    padding-left: 3%;
+                }
+    
+                #email-td {
+                    text-align: left;
+                    padding-right: 5%;
+                    color: $email-color;
+                }
+
+                #delete-td {
+                    text-align: center;
+                    
+                    span {
+                        color: $delete-color;
+                        font-size: 1.6em;
+                        cursor: pointer;
+                    }
+
+                    span:hover {
+                        color: $font-color;
+                    }
+                }
+
+                background-color: $white-color;
+            }
+
+            tr:nth-child(even) {
+                background-color: $tr-color;
+            }
+
+            tr:hover,
+            tr:nth-child(even):hover {
+                background-color: $hover-color;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .Container {
+        width: 90%;
+        padding: 0 5%;
+    }
+
+    section {
+        width: 100%;
+
+        #panel {
+            width: 90%;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 730px) {
+    #name,
+    #email {
+        margin-bottom: 20px;
+    }
+
+    #info {
+        padding: 20px 0;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+
+    section #panel #info,
+    section #panel #reset-field {
+        width: 100%;
+        float: left;
+        padding-left: 0;
+        padding-bottom: 0;
+    }
+}

@@ -1,0 +1,191 @@
+@charset "UTF-8";
+body {
+  background-color: #f9fbfa;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px; }
+
+.Container {
+  display: block;
+  width: 960px;
+  margin: 0 auto;
+  margin-top: 38px; }
+  .Container h1 {
+    color: #646c73; }
+
+section {
+  display: block;
+  float: left;
+  width: 960px;
+  height: auto;
+  box-shadow: 0 2px 4px 0 #ccc;
+  background-color: #fff; }
+  section #panel {
+    width: 940px;
+    display: block;
+    float: left;
+    background-color: #fff;
+    padding: 19px 0 19px 20px; }
+    section #panel #add-user,
+    section #panel #submit {
+      background-color: #f48cda;
+      width: 149px;
+      height: 41px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1em;
+      color: #fff;
+      font-weight: bold; }
+      section #panel #add-user span,
+      section #panel #submit span {
+        font-size: 17px;
+        padding: 0 5px;
+        background-color: #fff;
+        color: #f48cda;
+        border-radius: 50%;
+        margin-right: 10px; }
+    section #panel #add-user:hover,
+    section #panel #submit:hover {
+      background-color: #fff;
+      color: #f48cda;
+      cursor: pointer;
+      border: 2px solid #f48cda; }
+      section #panel #add-user:hover span,
+      section #panel #submit:hover span {
+        background-color: #f48cda;
+        color: #fff; }
+    section #panel #add-user:focus,
+    section #panel #submit:focus {
+      outline: none; }
+    section #panel #name,
+    section #panel #email {
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      padding: 9px 0 10px 5px;
+      font-size: 1.3em;
+      margin-right: 20px; }
+    section #panel ::placeholder {
+      color: #d3d5d7; }
+    section #panel :-ms-input-placeholder {
+      color: #d3d5d7; }
+    section #panel ::-ms-input-placeholder {
+      color: #d3d5d7; }
+    section #panel #reset-field {
+      color: #f56565;
+      text-decoration: underline;
+      font-weight: bold;
+      font-weight: 0.9em;
+      margin-left: 20px;
+      display: none; }
+    section #panel #reset-field:hover {
+      text-decoration: none;
+      cursor: pointer; }
+    section #panel #info {
+      color: #2a2c2b;
+      font-weight: bold;
+      padding-left: 20px; }
+    section #panel .error::before {
+      content: "! ";
+      color: #e12636;
+      padding: 2px 3px 2px 7px;
+      border: 2px solid #e12636;
+      border-radius: 50%;
+      margin-right: 10px; }
+    section #panel .error:before {
+      content: "! ";
+      color: #e12636;
+      padding: 2px 3px 2px 7px;
+      border: 2px solid #e12636;
+      border-radius: 50%;
+      margin-right: 10px; }
+    section #panel .correct::before {
+      content: "✔ ";
+      color: #0bab6b;
+      border-radius: 50%;
+      margin-right: 10px; }
+    section #panel .correct:before {
+      content: "✔ ";
+      color: #0bab6b;
+      border-radius: 50%;
+      margin-right: 10px; }
+  section table {
+    float: left;
+    width: 100%;
+    border: 0;
+    color: #646c73;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    border-spacing: 0; }
+    section table thead {
+      background-color: #f4f5f7;
+      text-align: left; }
+      section table thead tr {
+        height: 30px;
+        border: 0; }
+      section table thead #lp-title {
+        width: 15%;
+        text-align: left;
+        padding-left: 20px; }
+      section table thead #name-title {
+        width: 30%;
+        opacity: 1; }
+      section table thead #email-title {
+        width: 45%;
+        text-align: left;
+        opacity: 1; }
+      section table thead #name-title:hover,
+      section table thead #email-title:hover {
+        cursor: pointer;
+        opacity: 0.7; }
+      section table thead #delete-title {
+        width: 45%;
+        text-align: center; }
+    section table tbody tr {
+      height: 40px;
+      border: none;
+      background-color: #fff; }
+      section table tbody tr td {
+        border: none; }
+      section table tbody tr #lp-td {
+        text-align: left;
+        padding-left: 3%; }
+      section table tbody tr #email-td {
+        text-align: left;
+        padding-right: 5%;
+        color: #3b99b1; }
+      section table tbody tr #delete-td {
+        text-align: center; }
+        section table tbody tr #delete-td span {
+          color: #d4d8da;
+          font-size: 1.6em;
+          cursor: pointer; }
+        section table tbody tr #delete-td span:hover {
+          color: #646c73; }
+    section table tbody tr:nth-child(even) {
+      background-color: #fbfcfc; }
+    section table tbody tr:hover,
+    section table tbody tr:nth-child(even):hover {
+      background-color: #fce1f6; }
+
+@media only screen and (max-width: 1000px) {
+  .Container {
+    width: 90%;
+    padding: 0 5%; }
+  section {
+    width: 100%; }
+    section #panel {
+      width: 90%; } }
+
+@media only screen and (max-width: 730px) {
+  #name,
+  #email {
+    margin-bottom: 20px; }
+  #info {
+    padding: 20px 0; } }
+
+@media only screen and (max-width: 610px) {
+  section #panel #info,
+  section #panel #reset-field {
+    width: 100%;
+    float: left;
+    padding-left: 0;
+    padding-bottom: 0; } }
