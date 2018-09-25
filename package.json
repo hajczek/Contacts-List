@@ -2,10 +2,12 @@
   "name": "contacts",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://hajczek.github.io/Contacts-List/",
   "dependencies": {
     "email-validator": "^2.0.4",
     "escape-string-regexp": "^1.0.5",
     "form-serialize": "^0.7.2",
+    "gh-pages": "^2.0.0",
     "lodash": "^4.17.10",
     "node-sass-chokidar": "^1.3.3",
     "npm-run-all": "^4.1.3",
@@ -23,6 +25,8 @@
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   }
 }
