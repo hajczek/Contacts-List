@@ -43,7 +43,7 @@ This application allows you to:
 
 ### LICENSE
 
-The MIT License - See [license.md](https://github.com/hajczek/Neighborhood---Warsaw-Cultural-Map/blob/master/license/License.md)
+The MIT License - See [license.md](https://github.com/hajczek/Contacts-List/blob/master/license/License.md)
 
 
 
